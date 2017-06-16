@@ -6,9 +6,10 @@ import os
 dir_path = os.path.dirname(os.path.realpath(__file__))
 alist = dir_path.split('Core')
 
-Settings_File = open(alist[0] + 'Settings.txt')
+Settings_File = open("C:\\" + 'Settings.txt')
 List_Of_Lines_In_Settings_File = Settings_File.readlines()
 for line in List_Of_Lines_In_Settings_File:
+    print(line)
     exec(line)
 
 
